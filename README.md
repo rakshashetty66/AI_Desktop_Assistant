@@ -1,62 +1,81 @@
-# Jarvis AI
+# Jarvis AI Assistant
 
-Jarvis AI is a voice-controlled virtual assistant that can perform tasks like searching Google and Wikipedia, telling the time, and engaging in AI-powered conversations.
+## 📌 Overview
 
-## Features
-- Voice commands for opening websites (YouTube, Google, etc.)
-- Wikipedia search
-- Google search
-- AI chat using OpenAI API
-- Text-to-speech (TTS) responses
-- Speech recognition for user input
+Jarvis is an AI-powered voice assistant capable of performing various tasks, including searching the web, answering queries using OpenAI's API, fetching information from Wikipedia, and performing voice-based interactions using speech recognition and text-to-speech.
 
-## Installation
+## 🚀 Features
+
+-  🎤 Voice Command Recognition: Listens and converts speech to text.
+-  🔊 Text-to-Speech: Uses pyttsx3 for vocal responses.
+-  🔍 Web Search: Searches Google and Wikipedia.
+-  🕒 Time Inquiry: Tells the current time.
+-  🤖 AI Chatbot: Responds to user queries with OpenAI's GPT model.
+-  📂 AI Response Saving: Stores AI-generated responses as text files
+-  🌐 Automated Web Access: Opens YouTube, Google, and other websites on command.
+
+## 🛠️ Tech Stack
+
+-  **Python** 🐍
+-  **OpenAI GPT-3 (API-powered AI responses)**
+-  **SpeechRecognition 🎙️**
+-  **Pyttsx3 (Text-to-Speech Engine) 🔊**
+-  **Wikipedia API 📚**
+-  **Webbrowser Module 🌐**
+
+## 📦 Installation & Setup
 
 1.  **Clone the repository:**
+```sh
+git clone https://github.com/rakshashetty66/jarvis-ai.git
+cd jarvis-ai
+```
+2.  **Install dependencies:**
+```sh
+pip install speechrecognition openai pyttsx3 wikipedia
+```
+3.  **Set up OpenAI API Key:**
 
-    ```
-    git clone https://github.com/rakshashetty66/AI_Desktop_Assistant.git
-    cd AI_Desktop_Assistant
-    ```
-2.  **Install Dependencies:**
+-  Open config.py and add your OpenAI API key:
+```sh
+apikey = "your-openai-api-key"
+```
 
-    ```
-    pip install -r requirements.txt
-    ```
-3.  **Set up your OpenAI API key:**
+4.  **Run the script:**
+```sh
+python main.py
+```
 
-    *   Create a `.env` file in the root directory of the project.
-    *   Add the following line to the `.env` file, replacing `your_api_key_here` with your actual OpenAI API key:
+## 🔧 How It Works
 
-        ```
-        OPENAI_API_KEY=your_api_key_here
-        ```
+The assistant listens for commands using the microphone.
 
-4.  **Run the program:**
+Based on the command, it performs actions such as:
 
-    ```
-    python main.py
-    ```
+- Searching the web
+- Fetching Wikipedia summaries
+- Responding using OpenAI's GPT-3
+- Opening websites
+- Speaking back the response
 
-## Usage
+If a chat-based request is made, it maintains the conversation context.
 
-*   Speak commands such as "open YouTube", "search Wikipedia for Python", or "what is the time?".
-*   To stop the assistant, say "exit" or "Jarvis quit".
+🔍 Example Commands
 
-## Dependencies
+- "Open YouTube"
+- "Search Google for Python programming"
+- "Search Wikipedia for machine learning"
+- "What is the time?"
+- "Tell me a joke using artificial intelligence"
+- "Jarvis quit" (Exits the assistant)
 
-*   `speech_recognition`
-*   `pyttsx3`
-*   `wikipedia`
-*   `openai`
-*   `dotenv`
-*   `datetime`
-*   `webbrowser`
-
-## Contributing
-
-Feel free to fork this repository and contribute improvements. If you find any issues, please open a pull request.
-
-## License
+## 📜 License
 
 This project is open-source and available under the MIT License.
+
+## 👨‍💻 Author
+
+Developed by Raksha Shetty
+📧 Email: raksharshetty64@gmail.com
+🔗 LinkedIn: https://www.linkedin.com/in/rshetty64/
+💻 GitHub: github.com/rakshashetty66
