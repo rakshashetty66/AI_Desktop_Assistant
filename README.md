@@ -73,9 +73,10 @@ If a chat-based request is made, it maintains the conversation context.
 
 This project is open-source and available under the MIT License.
 
-## 👨‍💻 Author
+## 📞 Contact
+For any queries or suggestions, reach out to:
+- **Email:** raksharshetty46.com
+- **GitHub:** [Here.](https://github.com/rakshashetty66)
+- **LinkedIN:** [Here.](https://www.linkedin.com/in/rshetty64/)
 
-Developed by Raksha Shetty
-📧 Email: raksharshetty64@gmail.com
-🔗 LinkedIn: https://www.linkedin.com/in/rshetty64/
-💻 GitHub: github.com/rakshashetty66
+---
